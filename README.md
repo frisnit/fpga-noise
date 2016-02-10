@@ -7,7 +7,7 @@ The VGA output is 640x480 60Hz with a pixel clock of 25MHz. The LFSR is clocked 
 
 The 32-bit LFSR has a period of 2^32 bits (4294967296) which repeats about every 22 seconds at 192MHz.
 
-##### DIP switch 1 'pauses the noise display:
+##### DIP switch 1 'pauses' the noise display:
 
 This reloads the LFSR seed value on each VSYNC causing the same random sequence to be produced each frame.
 
@@ -27,4 +27,4 @@ Monochrome test
 ![Colour test](https://raw.githubusercontent.com/frisnit/fpga-noise/master/images/colour-test.jpg)
 Colour test
 
-This was built around the Elbert V2 demo code, the 7-segment LED driver is still in there.
+This was built around the Elbert V2 demo code, the 7-segment LED driver is still used to give some feedback from the DIP switches.
